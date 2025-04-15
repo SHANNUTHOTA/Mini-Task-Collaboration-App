@@ -1,0 +1,71 @@
+/* Ensure full height for HTML and Body */
+html, body {
+    height: 100%; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    background: #f4f4f4;
+    position: fixed; /* Fix the page layout */
+    width: 100%;
+}
+
+/* Body font and styling */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Center the login container in the middle of the screen */
+.container.d-flex {
+    height: 100%; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the container both vertically and horizontally */
+}
+
+/* Login container styling */
+.login-container {
+    padding: 2rem 4rem; /* Adjusted padding for better spacing */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
